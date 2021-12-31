@@ -1,99 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@309&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200;300;400;500;600;700&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 
-*{
-    margin: 0;
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{  
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    /* border-color: black; */
-
 }
 body{
-    font-family: 'Oswald', sans-serif;
-    height: 100vh;
-    background-color: #8384f0;
-    /* background-image: conic-gradient(red, yellow, green, blue, black); */
+    background-color: #f9f9f9;
+    height: 100vh;    
+    background-color: #f9f9f9;
     font-size: 22px;
     position: relative;
 }
 .container{
+    /* border: 2px solid red; */
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); /*it makes the things absolute center */
-    width: 450px;
-    background-color: rgb(247, 247, 247);
-    border-radius: 18px;
+    width: 370px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 30px;
     text-align: center;
     box-shadow: 1px 1px 13px rgb(0 0 0 / 10%);
 }
 h1{
-    background-color: #71eeb8;
+    background-color: #52ade2;
     padding: 10px 0;
-    font-size: 28px;
-    border-radius: 18px;
+    font-size: 20px;
+    border-radius: 10px;
 }
 p{
-    color: #292828;
+    color: #494747;
 }
 .control{
     margin: 25px 0;
-    /* background-color: #292828; */
 }
 input{
     border: none;
-    outline: none;
+    outline:none;
+    border-bottom: 2px solid #52ade2;
     text-align: center;
-    border-bottom: 1px solid #16a465;
-    border-width: 2px;
-    color: #16a465;
-    font-size: 28px;
-    margin-top: 20px;
-    
-}
-input:focus::placeholder {
-  color: transparent;
-}
+    color: #52ade2;
+    font-size: 25px;
+    margin-top: 20px; 
+} 
+
 select{
     border: none;
     outline: none;
-    /* text-align: center; */
-    border: 1px solid #16a465;
-    border-width: 2px;
-    color: #7e7e7e;
-    font-size: 15px;
+    border: 2px solid #52ade2;
+    color: #7a7a7a;
+    font-size: 18px;
     margin-top: 20px;
     padding: 11px 34px;
-    border-radius: 25px;
-    width: 75%;
+    border-radius: 30px;
+    width: 75%;     
 }
-button#calculate{
+
+#calculate{
     color: white;
-    background: #16a465;
+    background: #52ade2;
     border: 1px solid transparent;
     font-size: 17px;
     border-radius: 25px;
-    padding:  14px 29px;
+    padding: 14px 29px;
     margin: 25px;
-    cursor: pointer;
+    transition: all 0.3s ease;
 }
-
-button#calculate:hover{
-    /* color: #16a465; */
-    border-color: #16a465;
+#calculate:hover{
+    color: #52ade2;
+    border-color: #52ade2;
     background: white;
+    cursor: pointer;
+    font-weight: 400;
+}
+.totalTip{
+    background-color: #52ade2;
+    border-radius: 20px;
+    padding: 25px 0 35px;
+} 
+
+.totalTip #tip{
+    color: rgb(15, 56, 109);
+    font-size: 30px;
 }
 
-.totaltip{
-    background-color: #71eeb8;
-    border-radius: 18px;
-    padding: 25px 0 35px;
+.totalTip p{
+    color: black;
+    font-weight: 600;
 }
-p.tip{
-    font-size: 38px;
-    color: #0e3a6d;
-    margin-top: 10px;
-    
-}
-#calculate{
-    text-shadow: 1px 1px 2px black, 0 0 25px #16a465, 0 0 5px #16a465;
+
+.totalTip #dollar{
+    font-size: 30px;
 }
